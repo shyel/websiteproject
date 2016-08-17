@@ -3,11 +3,12 @@
 *	Front-end News! Stylesheet
 *
 *
-*	Header Background(Indigo) 	: rgba(64 84 178);
+*	Header Background(Indigo) 	: rgb(64 84 178);
 *	Latest News (Black) 		: rgb(255 255 225);
 *	News Title (Indigo dark)	: rgb(63 108 97);
 *	Posted by (Gray medium)		: rgb(19 0 1);
-*	Author Comments Like (Pink)	: rgba(253 154 177);
+*	Author Comments Like (Pink)	: rgb(253 154 177);
+*	BOrder (Gray light)			: rgb(220, 220, 220);
 *
 *****************************************************/
 
@@ -24,12 +25,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 
 }
 
-li {
-
-}
 
 p {
 
@@ -45,9 +46,11 @@ a {
 
 .top-head {
 	background-color: rgb(64, 84, 178);
-	padding: 15px 0;
 	color: rgb(255, 255, 255);
-	text-align: center;	
+	margin-bottom: 20px;
+	padding: 20px 0;
+	text-align: center;
+
 }
 
 /*------------------------------------
@@ -61,6 +64,30 @@ a {
 }
 
 
+/*------------------------------------
+*	News
+--------------------------------------*/
+
+.news-item {
+	border-bottom: 1px solid rgb(220, 220, 220); 
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+.news-link  {
+	font-size: 1em;
+	letter-spacing: .04em;
+	color: rgb(64, 84, 178);
+}
+
+/*------------------------------------
+*	Container
+--------------------------------------*/
+.container {
+	
+	margin: 0 auto;
+	max-width: 800px;
+}
 
 
 
