@@ -28,7 +28,7 @@ ol {
 }
 
 li {
-	
+
 }
 
 p {
@@ -38,3 +38,35 @@ p {
 a {
 
 }
+
+/*------------------------------------
+*	Top Head
+--------------------------------------*/
+
+.top-head {
+	background-color: rgb(64, 84, 178);
+	padding: 15px 0;
+	color: rgb(255, 255, 255);
+	text-align: center;	
+}
+
+/*------------------------------------
+*	Logo
+--------------------------------------*/
+
+.logo {
+	font-size: 1.875em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
