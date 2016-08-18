@@ -6,9 +6,9 @@
 *	Header Background(Indigo) 	: rgb(64 84 178);
 *	Latest News (Black) 		: rgb(255 255 225);
 *	News Title (Indigo dark)	: rgb(63 108 97);
-*	Posted by (Gray medium)		: rgb(19 0 1);
+*	Posted by (Gray medium)		: rgb(19, 0, 1);
 *	Author Comments Like (Pink)	: rgb(253 154 177);
-*	BOrder (Gray light)			: rgb(220, 220, 220);
+*	Border (Gray light)			: rgb(220, 220, 220);
 *
 *****************************************************/
 
@@ -71,14 +71,41 @@ a {
 .news-item {
 	border-bottom: 1px solid rgb(220, 220, 220); 
 	margin-bottom: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+	clear:both;
+
+}
+
+.news-item:last-child {
+	border-bottom: none;
 }
 
 .news-link  {
 	font-size: 1em;
 	letter-spacing: .04em;
 	color: rgb(64, 84, 178);
+	display: block;
 }
+
+.posted,
+.more{
+	font-size: .60em;
+	font-weight: normal;
+	margin-top: 5px;
+	margin-bottom: 0;
+
+}
+.posted {
+	font-style: italic;
+	display: inline;
+	
+}
+
+.more {
+	color: rgb(253, 154, 177);
+}
+
+
 
 /*------------------------------------
 *	Container
@@ -87,8 +114,33 @@ a {
 	
 	margin: 0 auto;
 	max-width: 800px;
+	clear: both;
 }
 
+/*------------------------------------
+*	Sub Header
+--------------------------------------*/
+.intro {
+	font-size: 1.25em;
+	font-weight: bold;
+	letter-spacing: .04em;
+	margin-bottom: 0;
+}
+
+.description {
+	float: left;
+	font-size: .80em;
+	font-weight: normal;
+	margin-top: 0;
+	padding-right: 5px;
+	
+}
+
+.add-link {
+	font-size: .85em;
+	color: rgb(253, 154, 177);
+	position: absolute;
+}
 
 
 
