@@ -3,10 +3,9 @@
 	<head>
 		<title>Front-End News</title>
 		<meta charset='UTF-8' />
-		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Montserrat:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Montserrat:400,700" rel="stylesheet" />
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="main.css"/>
-
 	</head>
 	<body>
 		<header class="top-head">
@@ -15,15 +14,6 @@
 			</div>
 		</header>
 
-		<!--<section class="sub-head">
-			<div class="container">
-				<h2 class="intro">Latest News</h2>
-				<h4 class="description">The latest links in the front-end community.</h4>
-				<a class="add-link" href="#">Add a link now!</a>
-			</div>
-		</section>
-	-->
-		
 		<main class="main-content">
 			<div class="container">
 
@@ -35,7 +25,7 @@
 							<li class="news-meta-item"><em>Posted by:</em></li>
 							<li class="news-meta-item"><a href="#">Michele Trimmer</a></li>
 							<li class="news-meta-item"><a href="#">2 comments</a></li>
-							<li class="news-meta-item"><a href="#">Like this story!</a></li>
+							<li class="news-meta-item"><a class="js-like" href="#">Like this story!</a></li>
 						</ul>
 
 					</li>
@@ -47,7 +37,7 @@
 							<li class="news-meta-item"><em>Posted by:</em></li>
 							<li class="news-meta-item"><a href="#">Joshua Trimmer</a></li>
 							<li class="news-meta-item"><a class="more" href="#">5 comments</a></li>
-							<li class="news-meta-item"><a class="more" href="#">Like this story!</a></li>
+							<li class="news-meta-item"><a class="js-like" href="#">Like this story!</a></li>
 						</ul>
 
 					</li>
@@ -59,7 +49,7 @@
 							<li class="news-meta-item"><em>Posted by:</em></li>
 							<li class="news-meta-item"><a href="#">John D. Jameson</a></li>
 							<li class="news-meta-item"><a class="more" href="#">0 comments</a></li>
-							<li class="news-meta-item"><a class="more" href="#">Like this story!</a></li>
+							<li class="news-meta-item"><a class="js-like" href="#">Like this story!</a></li>
 						</ul>												
 					</li>
 
@@ -69,7 +59,7 @@
 							<li class="news-meta-item"><em>Posted by:</em></li>
 							<li class="news-meta-item"><a href="#">Drew Barontini</a></li>
 							<li class="news-meta-item"><a class="more" href="#">4 comments</a></li>
-							<li class="news-meta-item"><a class="more" href="#">Like this story!</a></li>
+							<li class="news-meta-item"><a class="js-like" href="#">Like this story!</a></li>
 						</ul>					
 
 					</li>
@@ -81,7 +71,7 @@
 							<li class="news-meta-item"><em>Posted by:</em></li>
 							<li class="news-meta-item"><a href="#">Jean Kaluza</a></li>
 							<li class="news-meta-item"><a class="more" href="#">9 comments</a></li>
-							<li class="news-meta-item"><a class="more" href="#">Like this story!</a></li>
+							<li class="news-meta-item"><a class="js-like" href="#">Like this story!</a></li>
 						</ul>					
 
 					</li>
@@ -93,7 +83,7 @@
 							<li class="news-meta-item"><em>Posted by:</em></li>
 							<li class="news-meta-item"><a href="#">Jordan Wade</a></li>
 							<li class="news-meta-item"><a class="more" href="#">1 comments</a></li>
-							<li class="news-meta-item"><a class="more" href="#">Like this story!</a></li>
+							<li class="news-meta-item"><a class="js-like" href="#">Like this story!</a></li>
 						</ul>
 
 					</li>
@@ -105,8 +95,9 @@
 							<li class="news-meta-item"><em>Posted by:</em></li>
 							<li class="news-meta-item"><a href="#">John D. Jameson</a></li>
 							<li class="news-meta-item"><a class="more" href="#">3 comments</a></li>
-							<li class="news-meta-item"><a class="more" href="#">Like this story!</a></li>
-						</ul>					
+							<li class="news-meta-item"><a class="js-like" href="#">Like this story!</a></li>
+						</ul>
+					</li>					
 
 					<li class="news-item">
 						<a class="news-link" href="#">Creating Loading Buttons With SVG and Segment</a>
@@ -115,7 +106,7 @@
 							<li class="news-meta-item"><em>Posted by:</em></li>
 							<li class="news-meta-item"><a href="#">Sarah Imbert</a></li>	
 							<li class="news-meta-item"><a class="more" href="#">5 comments</a></li>
-							<li class="news-meta-item"><a class="more" href="#">Like this story!</a></li>
+							<li class="news-meta-item"><a class="js-like" href="#">Like this story!</a></li>
 						</ul>
 
 					</li>
@@ -127,7 +118,7 @@
 							<li class="news-meta-item"><em>Posted by:</em></li>
 							<li class="news-meta-item"><a href="#">Dan Denney</a></li>
 							<li class="news-meta-item"><a class="more" href="#">0 comment</a></li>
-							<li class="news-meta-item"><a class="more" href="#">Like this story!</a></li>
+							<li class="news-meta-item"><a class="js-like" href="#">Like this story!</a></li>
 						</ul>
 
 					</li>
@@ -138,7 +129,7 @@
 							<li class="news-meta-item"><em>Posted by:</em></li>
 							<li class="news-meta-item"><a href="#">Justin Mezzell</a></li>
 							<li class="news-meta-item"><a class="more" href="#">2 comment</a></li>
-							<li class="news-meta-item"><a class="more" href="#">Like this story!</a></li>
+							<li class="news-meta-item"><a class="js-like" href="#">Like this story!</a></li>
 						</ul>					
 
 					</li>
@@ -146,6 +137,9 @@
 
 			</div>
 		</main>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+	<script src="app.js"></script>
 
 	</body>
 </html>
