@@ -6,8 +6,8 @@
 *	Header Background(Indigo) 	: rgb(64 84 178);
 *	Latest News (Black) 		: rgb(255 255 225);
 *	News Title (Indigo dark)	: rgb(63 108 97);
-*	Posted by (Gray medium)		: rgb(19, 0, 1);
-*	Author Comments Like (Pink)	: rgb(253 154 177);
+*	default (Gray medium)		: rgb(19, 0, 1);
+*	Author Comments Like (Pink)	: rgb(253, 154, 177);
 *	Border (Gray light)			: rgb(220, 220, 220);
 *
 *****************************************************/
@@ -17,6 +17,8 @@
 --------------------------------------*/
 
 body {
+	font-family: 400 1em/1.5em 'Lato', sans-serif;
+	color: rgb(63, 108, 97);
 
 }
 
@@ -24,12 +26,13 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-ol {
+ol, ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-
 }
+
+
 
 
 p {
@@ -37,7 +40,13 @@ p {
 }
 
 a {
+	color: rgb(253, 154, 177);
+}
 
+a:active,
+a:focus,
+a:hover {
+	color: rgb(19, 0, 1);
 }
 
 /*------------------------------------
@@ -58,8 +67,9 @@ a {
 --------------------------------------*/
 
 .logo {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1.875em;
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 
@@ -72,8 +82,6 @@ a {
 	border-bottom: 1px solid rgb(220, 220, 220); 
 	margin-bottom: 20px;
 	padding-bottom: 10px;
-	clear:both;
-
 }
 
 .news-item:last-child {
@@ -81,29 +89,27 @@ a {
 }
 
 .news-link  {
-	font-size: 1em;
-	letter-spacing: .04em;
 	color: rgb(64, 84, 178);
 	display: block;
-}
-
-.posted,
-.more{
-	font-size: .60em;
-	font-weight: normal;
-	margin-top: 5px;
-	margin-bottom: 0;
+	font-size: 1.125em;
+	letter-spacing: .02em;
+	margin-bottom: 10px;
 
 }
-.posted {
-	font-style: italic;
+
+
+
+.news-meta-item {
 	display: inline;
+	font-size: .80em;
+	margin-right: 10px;
 	
 }
 
-.more {
-	color: rgb(253, 154, 177);
+.news-meta-item:first-child {
+	margin-right: 0;
 }
+
 
 
 
@@ -120,7 +126,7 @@ a {
 /*------------------------------------
 *	Sub Header
 --------------------------------------*/
-.intro {
+/*.intro {
 	font-size: 1.25em;
 	font-weight: bold;
 	letter-spacing: .04em;
