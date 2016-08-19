@@ -20,14 +20,61 @@
 
 				<header class="sub-header">
 					<h1>Latest News</h1>
-					<p>The latest links in the front-end community.<a href="#">Add a link now!</a></p>
-					<form class="form">
+					<p>The latest links in the front-end community.<a class="add-now js-add-link" href="#"> Add a link now!</a></p>
+					
+					<form class="form js-form">
 						<label class="form-label" for="form-link-input">Add a story:</label>
 						<input class="form-input" id="form-link-input" />
+					</form>
 
 				</header>
 
-				<ol>
+				<div class="modal">
+					
+					<div class="modal-media">
+						<img src="images/meprof.jpg" alt="m-trimmer" />
+					<h3 class="modal-media-title">Michele Trimmer</h3>
+					</div>
+
+					<div class="modal-content">
+						<h3>About Me</h3>
+						<p>I'm working on being a full time Web Developer. Loving the challenge everyday.</p>
+
+						<ol class="news">
+							<li class="news-item">
+								<a class="news-link" href="#">Frontend Design</a>
+							</li>
+							
+							<li class="news-item">
+								<a class="news-link" href="#">Getting Ready For HTTP/2</a>
+							</li>
+							
+							<li class="news-item">
+								<a class="news-link" href="#">Managing Typography on Large Apps</a>
+							</li>
+
+							<li class="news-item">
+								<a class="news-link" href="#">Estimating A Front End Web Dev Job </a>
+							</li>
+
+							<li class="news-item">
+								<a class="news-link" href="#">An Introduction to PostCSS</a>
+							</li>
+
+							<li class="news-item">
+								<a class="news-link" href="#">Creating Loading Buttons With SVG and Segment</a>	
+							</li>
+
+							<li class="news-item">
+								<a class="news-link" href="#">React and the Economics of Dynamic Web Interface</a>
+							</li>
+
+						</ol>
+
+				</div>
+
+
+				<ol class="news">
 					<li class="news-item">
 						<a class="news-link" href="#">Frontend Design</a>
 			
@@ -135,6 +182,7 @@
 					
 					<li class="news-item">
 						<a class="news-link" href="#">React and the Economics of Dynamic Web Interface</a>	
+
 						<ul class="news-meta">
 							<li class="news-meta-item"><em>Posted by:</em></li>
 							<li class="news-meta-item"><a href="#">Justin Mezzell</a></li>
