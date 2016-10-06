@@ -188,16 +188,16 @@ a:hover {
 /*------------------------------------
 *	News
 --------------------------------------*/
-
+.news-item:last-child {
+	border-bottom: none;
+}
 .news-item {
 	border-bottom: 1px solid rgb(220, 220, 220); 
 	margin-bottom: 20px;
 	padding-bottom: 10px;
 }
 
-.news-item:last-child {
-	border-bottom: none;
-}
+
 
 .news-link  {
 	color: rgb(64, 84, 178);
